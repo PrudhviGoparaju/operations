@@ -1,0 +1,68 @@
+1------
+Float r= 2.5f/2;
+float r= 2.5f%2;
+
+class Oper1{
+    public static void main(String args [])
+    {
+        float r=2.5f / 2 ; //how is this 1.25 comes as a result?
+        System.out.println(r);
+    }
+
+}
+o/p- 1.25
+
+class Oper1{
+    public static void main(String args [])
+    {
+        float r=2.5f % 2 ; //how is this 0.5 comes as a result?
+        System.out.println(r);
+    }
+
+}
+o/p-0.5
+2---------
+23==>2+3=5
+54==>5+4=9
+33==>3+3=6
+43==>4+3=7
+class Oper2{
+    public static void main(String args[])
+    {
+        int[] numbers = {23 , 54 , 33 ,43};
+        for (int num : numbers)
+        {
+            int digit1 = num / 10 ;
+            int digit2 = num % 10 ;
+            int sum =digit1 + digit2 ;
+            System.out.println("Sum of digits" + " " + num + "==>" + digit1 + "+" + digit2 + "==>" + sum ) ;
+
+        }
+        
+        
+    }
+
+
+}
+O/p-
+Sum of digits 23==>2+3==>5
+Sum of digits 54==>5+4==>9
+Sum of digits 33==>3+3==>6
+Sum of digits 43==>4+3==>7
+
+3-----
+c /= 2, e %= 2
+class Oper3{
+     public static void main(String args [])
+     {
+        int c =20;
+        int e =20;
+        c /=2 ; e%= 2;
+        System.out.println(c);
+        System.out.println(e);
+     }
+
+}
+o/p--
+10
+0
